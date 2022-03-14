@@ -1,0 +1,104 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Main Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0.5rem;
+  margin: 1rem auto;
+  border-radius: 0.5rem;
+
+  box-shadow: 0px 0px 8px -3px rgba(110, 110, 110, 0.75);
+  -webkit-box-shadow: 0px 0px 8px -3px rgba(110, 110, 110, 0.75);
+  -moz-box-shadow: 0px 0px 8px -3px rgba(110, 110, 110, 0.75);
+}
+
+/* Event header styles */
+.event_container {
+  background-color: #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem;
+  width: 25rem;
+}
+
+.event_head {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+span {
+  color: #555;
+  font-size: 1.2rem;
+}
+
+.date_time {
+  color: #888;
+}
+
+/* Odd Provider styles */
+.provider_list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 50vh;
+  overflow: scroll;
+}
+
+.provider_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.5rem;
+}
+
+.provider_container:nth-child(odd) {
+  background-color: rgba(221, 221, 221, 0.253);
+}
+
+.provider_head {
+  font-weight: 550;
+  font-size: 1.5rem;
+}
+
+.count {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.9rem;
+}
+
+.odds {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.odd {
+  font-weight: 500;
+  color: black;
+  font-size: 1.3rem;
+}
+
+.away {
+  display: none;
+}
+
+@media screen and (max-width: 1080px) {
+  main {
+    flex-wrap: wrap;
+  }
+}

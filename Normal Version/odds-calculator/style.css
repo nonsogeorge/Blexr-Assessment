@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+
+}
+.main-container {
+    background-color: rgb(236, 239, 247);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    gap: 1.8rem;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    font-size: 1.3rem;
+    gap: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.096);
+    padding-bottom: 1.7rem;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.header-text{
+    padding-right: 4rem;
+    line-height: 1.5;
+}
+.select-format {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.8rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+select {
+    padding-top: .4rem;
+    padding-bottom: .4rem;
+    padding-left: .7rem;
+    border: none;
+    border-radius: .2rem;
+    outline: none;
+    width: 11rem;
+    font-size: 1.2rem;
+}
+
+   
+.form-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.4rem;
+}
+.form-container-odd {
+    display: flex;
+    flex-direction: column;
+     justify-content: center;
+     gap: 1rem;
+}
+.payout {
+    align-self: flex-start;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.payout button {
+    width: 100%;
+    background-color: rgb(9, 9, 36);
+    color: #ffff;
+}
+
+.stake_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.stake, .odd_input {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 550;
+}
+
+.payout_text {
+    align-self: flex-end;
+    justify-self: flex-start;
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+    font-weight: 550;
+}
+
+.clear {
+    align-self: flex-end;
+    display: flex;
+    gap: .5rem;
+    margin-top: 1.5rem;
+    font-weight: 600;
+
+}
+input::placeholder {
+    background-color: rgba(255, 255, 255, 0.863);
+     color: #bbb;
+    
+}
+
+input, button {
+    text-align: center;
+    padding: 1.2rem;
+    border: none;
+    background-color: none;
+    border-radius: .4rem;
+    outline: none;
+}
+
+button {
+    border: none;
+    background-color: #fff;
+    border-radius: .4rem;
+   
+}
+.add-odd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+    font-weight: 550;  
+}
+
+.clear_txt {
+    cursor: pointer;
+}
+
+.error-div {
+  color: orangered;
+}
+
+
+

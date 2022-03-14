@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    font-family: sans-serif;
+    padding: 2rem;
+   
+ 
+}
+.header {  
+    background-color: #ddd;
+    display: flex;
+    padding: 3rem;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 4rem;
+    font-size: 1.7rem;
+}
+
+.header-primary {
+    display: flex;
+    gap: 1rem;
+    padding-left: 2rem;
+    align-items: center;
+
+}
+.sport_select {
+    width: 16rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    color: #333;
+    padding-left: 0.6rem;
+    border: 3px solid rgba(51, 51, 51, 0.555);
+    border-radius: 0.5rem;
+    outline: none;
+}
+.btn {
+    padding: 1.1rem 3rem;
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: rgb(29, 75, 71);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0.3rem;
+}

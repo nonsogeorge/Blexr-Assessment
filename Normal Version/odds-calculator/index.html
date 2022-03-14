@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://css.gg/close.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/a475c9099f.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Bet Calculator</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <header>
+        <i
+          style="font-size: 2rem; padding-bottom: 1.5rem"
+          class="fa fa-calculator"
+        ></i>
+        <p class="header-text">
+          Enter the Stake and Odd for your bet and the Bet Calculator will
+          automatically <br />
+          calculate the Payout. Add Odds for Multiples.
+        </p>
+      </header>
+      <div class="select-format">
+        <p>Selected Odds Format:</p>
+        <select name="select" id="select">
+          <!-- <option value=""></option> -->
+          <option value="American">American</option>
+          <option value="Decimal">Decimal</option>
+          <option value="Fractal">Fractal</option>
+        </select>
+      </div>
+      <div class="form-container">
+        <div class="stake_container">
+          <div class="stake">
+            <label>Stake</label>
+            <input
+              class="placeholder"
+              type="text"
+              name="stake"
+              id="stake"
+              placeholder="Enter stake"
+            />
+          </div>
+          <p class="payout_text">Payout</p>
+        </div>
+        <div class="form-container-odd">
+          <div class="odd_input">
+            <label>Odds</label>
+            <input
+              type="text"
+              class="odds"
+              name="odds"
+              placeholder="Enter odds"
+            />
+          </div>
+          <p class="error-div"></p>
+          <button class="add-odd"><i class="fa fa-plus"></i> Add odds</button>
+          <div class="clear">
+            <i class="fa fa-close"></i>
+            <p class="clear_txt">CLEAR</p>
+          </div>
+          <div class="payout">
+            <button class="payout_btn">$0.00</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
